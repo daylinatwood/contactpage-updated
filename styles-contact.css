@@ -1,0 +1,191 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/gradient-background-contact-page.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.center {
+    width: 700px;
+	padding: 2%;
+	border-radius: 25px;
+    margin: 100px auto;
+ 	background: rgba(255, 248, 232, 0.9); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+
+/* ANIMATION */
+	animation: fadeIn 3s;
+	-webkit-animation: fadeIn 3s;
+	-moz-animation: fadeIn 3s;
+	-o-animation: fadeIn 3s;
+	-ms-animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-ms-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* LOGO MARGINS */
+#logo {
+    margin-bottom: 0px;
+	margin-left: 325px;
+}
+
+/* HEADING */
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	/*font-family: 'DM Serif Display', serif;*/
+	font-family: 'Ubuntu', sans-serif;
+	text-align: left;
+	font-size: 5em;
+	margin-left: 80px;
+	margin-top: 0px;
+	
+    /*margin: 0px auto 10px auto;*/
+    color: rgb(0, 0, 0);
+}
+/* PERIOD IN DIFFERENT COLOR */
+h1::after {
+	content: '.';
+	color: rgb(214, 43, 214);
+  }
+
+/* SUBHEADING */
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.4em;
+    line-height: 1.4;
+	text-align: left;
+	margin-left: 80px;
+	margin-top: 5px;
+    color: rgb(230, 63, 13);
+    padding: 0px 0px;
+    /*margin: 0px auto 10px auto;*/
+}
+
+/* PARAGRAPH */
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Poppins', sans-serif;
+	font-size: .9em;
+    line-height: 1.6;
+	margin-top: 20px;
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 60px;
+	font-style: italic;
+    color: rgb(57, 57, 57);
+}
+
+/* NAVIGATION BAR */
+nav{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+	width: 400px;
+	margin: 0 auto;
+	/*border: solid rgb(57, 57, 57);*/
+	border-width: 1px 0;
+	text-align: center;
+	margin-top: 2em;
+}
+nav li{
+	display: inline;
+	margin-right: 20px;
+}
+nav a{
+	display: inline-block;
+	padding: 15px;
+	border-radius: 30px;
+}
+
+a{
+	background-color: rgb(230, 63, 13);
+	color: rgb(255, 248, 232);
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover{
+	color: rgb(255, 248, 232);
+	background: rgb(57, 57, 57);
+}
+
+
